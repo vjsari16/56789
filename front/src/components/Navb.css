@@ -1,0 +1,62 @@
+*::before{
+    margin:0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%
+}
+body{
+    font-size: 1.6rem;
+    
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: rgb(4, 4, 4);
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 9vh;
+    background-color: darkgray;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+}
+.brand{
+    text-transform:none;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: cursive;
+}
+.nav-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 3rem;
+}
+.nav-toggler div {
+    width : 3rem;
+    height: 0.4rem;
+    margin: 0.3rem;
+    background-color: rgb(2, 2, 14);
+}
+.nav-toggler{
+    cursor: pointer;
+    display:none;
+}
+
+
+.nav-active{
+    transform: translate(0);
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-4px, 5px)
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-4px, -5px)
+}
